@@ -42,6 +42,14 @@ $("#dial4").click(function() { // when "button_id" is clicked
 });
 
 $("#dial5").click(function() { // when "button_id" is clicked
-	
+	$("#dialerText").appendTo("5");
+});
+
+$("#dial6").click(function() { // when "button_id" is clicked
+	$("#dialerText").appendTo(6);
+});
+
+$("#dial7").click(function() { // when "button_id" is clicked
+	$("#dialerText").append("7");
 });
 
