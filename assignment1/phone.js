@@ -5,6 +5,7 @@ $(document).ready(function() { // do this when the document is loaded
     $("#newContact").hide(); // hide the element with ID "otherElement"
 });
 
+// Tab Buttons
 $("#tb1").click(function() { // when "button_id" is clicked
 	$("#dialer").show(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
@@ -22,3 +23,25 @@ $("#tb3").click(function() { // when "button_id" is clicked
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").show(); // hide the element with ID "otherElement"
 });
+
+// Dial Buttons
+$("#dial1").click(function() { // when "button_id" is clicked
+	$("#dialerText").append(1);
+});
+
+$("#dial2").click(function() { // when "button_id" is clicked
+	$("#dialerText").append("2");
+});
+
+$("#dial3").click(function() { // when "button_id" is clicked
+	$("#dialerText").append(3);
+});
+
+$("#dial4").click(function() { // when "button_id" is clicked
+	$("#dialerText").append("4");
+});
+
+$("#dial5").click(function() { // when "button_id" is clicked
+	
+});
+
