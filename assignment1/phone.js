@@ -26,11 +26,11 @@ $("#tb3").click(function() { // when "button_id" is clicked
 
 // Dial Buttons
 $("#dial1").click(function() { // when "button_id" is clicked
-	$("#dialerText").append(1);
+	$("#dialerText").value.append(1);
 });
 
 $("#dial2").click(function() { // when "button_id" is clicked
-	$("#dialerText").append("2");
+	$("#dialerText").value.append("2");
 });
 
 $("#dial3").click(function() { // when "button_id" is clicked
