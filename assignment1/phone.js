@@ -40,6 +40,8 @@ function dialInput(number) {
 function addContact() {
     var name = document.getElementById('name').value + ': ';
     var number = document.getElementById('number').value + '<br>';
+    console.log(document.getElementById('contact_list').innerHTML);
     document.getElementById('contact_list').innerHTML = document.getElementById('contact_list').innerHTML + name + number;
+    console.log(document.getElementById('contact_list').innerHTML);
 }
 
