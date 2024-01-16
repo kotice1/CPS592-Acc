@@ -47,5 +47,7 @@ function addContact() {
     // console.log(document.getElementById('contact_list').innerHTML);
 
     document.getElementById('contact_list').innerHTML += name + number;
+    document.getElementById('name').value = "";
+    document.getElementById('number').value = "";
 }
 
