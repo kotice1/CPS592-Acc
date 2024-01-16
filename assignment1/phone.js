@@ -53,3 +53,7 @@ $("#dial7").click(function() { // when "button_id" is clicked
 	$("#dialerText").append("7");
 });
 
+function dialInput(number) {
+    $("#dialerText").value = $("#dialerText").value.append(number);
+}
+
