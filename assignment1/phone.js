@@ -1,8 +1,8 @@
 // phone.js
 $(document).ready(function() { // do this when the document is loaded
 	$("#dialer").show(); // show the element with ID "element"
-	$("#contact_list").hide(); // hide the element with ID "otherElement"
-    $("#newContact").hide(); // hide the element with ID "otherElement"
+	$("#contact_list").show(); // hide the element with ID "otherElement"
+    $("#newContact").show(); // hide the element with ID "otherElement"
 });
 
 // Tab Buttons
@@ -37,11 +37,15 @@ function dialInput(number) {
     }
 }
 
+var list = document.getElementById('contact_list').innerHTML;
+// Add to Contact List
 function addContact() {
     var name = document.getElementById('name').value + ': ';
     var number = document.getElementById('number').value + '<br>';
-    console.log(document.getElementById('contact_list').innerHTML);
-    document.getElementById('contact_list').innerHTML = document.getElementById('contact_list').innerHTML + name + number;
-    console.log(document.getElementById('contact_list').innerHTML);
+    // console.log(document.getElementById('contact_list').innerHTML);
+    // document.getElementById('contact_list').innerHTML = document.getElementById('contact_list').innerHTML + name + number;
+    // console.log(document.getElementById('contact_list').innerHTML);
+
+    document.getElementById('contact_list').innerHTML += name + number;
 }
 
