@@ -38,6 +38,8 @@ function dialInput(number) {
 }
 
 function addContact(name, number) {
-    document.getElementById("contact_list").innerHTML = document.getElementById("contact_list").innerHTML + "<br>" + name + ": " + number;
+    document.getElementById("contact_list").innerHTML = document.getElementById("contact_list").innerHTML + "<br>" + document.getElementById("name").value + ": " + document.getElementById("number").value;
+    document.getElementById("name").value = "";
+    document.getElementById("number").value = "";
 }
 
