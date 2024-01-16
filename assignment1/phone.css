@@ -1,6 +1,16 @@
 /* phone.css */
 
-.tab_btn {
+.tab-btn {
     background-color: blue;
     color:#fff;
+}
+
+.submit-btn {
+    background-color: rgb(57, 202, 57);
+    color: #fff;
+}
+
+.dial-btn {
+    width: 20px;
+    height: 20px;
 }
