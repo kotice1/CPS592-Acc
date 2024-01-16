@@ -37,3 +37,7 @@ function dialInput(number) {
     }
 }
 
+function addContact(name, number) {
+    document.getElementById("content").innerHTML = document.getElementById("content").innerHTML + "\n" + name + ": " + number;
+}
+
