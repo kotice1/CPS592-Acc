@@ -26,10 +26,10 @@ $("#tb3").click(function() { // when "button_id" is clicked
 
 // Dial Buttons
 function dialInput(number) {
-    if (number == 'clear') {
+    if (number === 'clear') {
         document.getElementById('dialerText').value = '';
     }
-    else if (number == 'dial') {
+    else if (number === 'dial') {
         document.getElementById('dialerText').value = 'Ringing ' + document.getElementById('dialerText').value + '...';
     }
     else {
