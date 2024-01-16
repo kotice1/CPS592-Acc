@@ -54,7 +54,7 @@ $("#tb3").click(function() { // when "button_id" is clicked
 // });
 var dialText = ""
 function dialInput(number) {
-    dialText = dialText + number;
+    dialText = dialText.append(number);
     console.log(dialText);
 }
 
