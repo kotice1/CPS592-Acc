@@ -52,8 +52,9 @@ $("#tb3").click(function() { // when "button_id" is clicked
 // $("#dial7").click(function() { // when "button_id" is clicked
 // 	$("#dialerText").append("7");
 // });
-
+var dialText = ""
 function dialInput(number) {
-    $("#dialerText").value = $("#dialerText").value.append(number);
+    dialText = dialText + number;
+    console.log(dialText);
 }
 
