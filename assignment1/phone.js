@@ -61,10 +61,27 @@ function addContact() {
     document.getElementById('number').value = "";
 }
 
+var downX = 0;
+var downY = 0;
+var upX = 0;
+var upY = 0;
 // Gesture Area Testing
-$("#test-area").mousedown(function() {
+$("#test-area").mousedown(function(event) {
 	document.getElementById('test-area').innerHTML = "Mouse Down";
+    downX = event.pageX;
+    downY = event.pageY;
 });
-$("#test-area").mouseup(function() { 
-	document.getElementById('test-area').innerHTML = "Mouse Up";
+$("#test-area").mouseup(function(event) { 
+    upX = event.pageX;
+    upY = event.pageY;
+    if (downX < upX) { //swipe right
+        document.getElementById('test-area').innerHTML = "Swipe Right";
+    }
+    else if (downX > upX) {
+        document.getElementById('test-area').innerHTML = "Swipe Left";
+    }
+    else {
+        document.getElementById('test-area').innerHTML = "Mouse Up";
+    }
 });
+
