@@ -63,11 +63,11 @@ function addContact() {
 
 // Gesture Area Testing
 $("#test-area").onMouseDown(function() { // when "button_id" is clicked
-	document.getElementById('gesture-output').innerHTML = "Mouse Down";
+	document.getElementById('test-area').innerHTML = "Mouse Down";
 });
 $("#test-area").onMouseUp(function() { // when "button_id" is clicked
-	document.getElementById('gesture-output').innerHTML = "Mouse Up";
+	document.getElementById('test-area').innerHTML = "Mouse Up";
 });
 $("#test-area").onMouseMove(function() { // when "button_id" is clicked
-	document.getElementById('gesture-output').innerHTML = "";
+	document.getElementById('test-area').innerHTML = "";
 });
