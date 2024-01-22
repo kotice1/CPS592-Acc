@@ -74,14 +74,29 @@ $("#test-area").mousedown(function(event) {
 $("#test-area").mouseup(function(event) { 
     upX = event.pageX;
     upY = event.pageY;
-    if (downX < upX) { //swipe right
-        document.getElementById('test-area').innerHTML = "Swipe Right";
-    }
-    else if (downX > upX) {
-        document.getElementById('test-area').innerHTML = "Swipe Left";
+    distX = Math.abs(downX - upX);
+    distY = Math.abs(downY - upY);
+    if (distX > distY) {
+        if (downX < upX) { //swipe right
+            document.getElementById('test-area').innerHTML = "Swipe Right";
+        }
+        else if (downX > upX) { //swipe left
+            document.getElementById('test-area').innerHTML = "Swipe Left";
+        }
+        else {
+            document.getElementById('test-area').innerHTML = "Mouse Up";
+        }
     }
     else {
-        document.getElementById('test-area').innerHTML = "Mouse Up";
+        if (downY < upY) { //swipe down
+            document.getElementById('test-area').innerHTML = "Swipe Down";
+        }
+        else if (downY > upY) { // swipe up
+            document.getElementById('test-area').innerHTML = "Swipe Up";
+        }
+        else {
+            document.getElementById('test-area').innerHTML = "Mouse Up";
+        }
     }
 });
 
