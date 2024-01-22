@@ -65,6 +65,6 @@ function addContact() {
 $("#test-area").mousedown(function() {
 	document.getElementById('test-area').innerHTML = "Mouse Down";
 });
-$("#test-area").onMouseUp(function() { 
+$("#test-area").mouseup(function() { 
 	document.getElementById('test-area').innerHTML = "Mouse Up";
 });
