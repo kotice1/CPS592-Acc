@@ -1,9 +1,9 @@
 // phone.js
 $(document).ready(function() { // do this when the document is loaded
-	$("#dialer").hide(); // show the element with ID "element"
+	$("#dialer").show(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
-    $("#test-gestures").show();
+    $("#test-gestures").hide();
 });
 
 // Tab Buttons
@@ -62,9 +62,9 @@ function addContact() {
 }
 
 // Gesture Area Testing
-$("#test-area").onMouseDown(function() { // when "button_id" is clicked
+$("#test-area").mousedown(function() {
 	document.getElementById('test-area').innerHTML = "Mouse Down";
 });
-$("#test-area").onMouseUp(function() { // when "button_id" is clicked
+$("#test-area").onMouseUp(function() { 
 	document.getElementById('test-area').innerHTML = "Mouse Up";
 });
