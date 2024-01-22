@@ -3,6 +3,7 @@ $(document).ready(function() { // do this when the document is loaded
 	$("#dialer").show(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
+    $("#test-gestures").hide();
 });
 
 // Tab Buttons
@@ -16,12 +17,20 @@ $("#tb2").click(function() { // when "button_id" is clicked
 	$("#dialer").hide(); // show the element with ID "element"
 	$("#contact_list").show(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
+    $("#test-gestures").hide();
 });
 
 $("#tb3").click(function() { // when "button_id" is clicked
 	$("#dialer").hide(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").show(); // hide the element with ID "otherElement"
+    $("#test-gestures").hide();
+});
+$("#tb4").click(function() { // when "button_id" is clicked
+	$("#dialer").hide(); // show the element with ID "element"
+	$("#contact_list").hide(); // hide the element with ID "otherElement"
+    $("#newContact").hide(); // hide the element with ID "otherElement"
+    $("#test-gestures").show();
 });
 
 // Dial Buttons
