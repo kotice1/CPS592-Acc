@@ -62,12 +62,9 @@ function addContact() {
 }
 
 // Gesture Area Testing
-$("#test-gestures").onMouseDown(function() { // when "button_id" is clicked
+$("#test-area").onMouseDown(function() { // when "button_id" is clicked
 	document.getElementById('test-area').innerHTML = "Mouse Down";
 });
-$("#test-gestures").onMouseUp(function() { // when "button_id" is clicked
+$("#test-area").onMouseUp(function() { // when "button_id" is clicked
 	document.getElementById('test-area').innerHTML = "Mouse Up";
-});
-$("#test-gestures").onMouseMove(function() { // when "button_id" is clicked
-	document.getElementById('test-area').innerHTML = "";
 });
