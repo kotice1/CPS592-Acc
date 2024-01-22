@@ -1,9 +1,9 @@
 // phone.js
 $(document).ready(function() { // do this when the document is loaded
-	$("#dialer").show(); // show the element with ID "element"
+	$("#dialer").hide(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
-    $("#test-gestures").hide();
+    $("#test-gestures").show();
 });
 
 // Tab Buttons
@@ -11,6 +11,7 @@ $("#tb1").click(function() { // when "button_id" is clicked
 	$("#dialer").show(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
+    $("#test-gestures").hide();
 });
 
 $("#tb2").click(function() { // when "button_id" is clicked
@@ -61,6 +62,12 @@ function addContact() {
 }
 
 // Gesture Area Testing
-$("#test-area").mousedown(function() { // when "button_id" is clicked
-	document.getElementById('test-area').innerHTML = "Mouse Down";
+$("#test-area").onMouseDown(function() { // when "button_id" is clicked
+	document.getElementById('gesture-output').innerHTML = "Mouse Down";
+});
+$("#test-area").onMouseUp(function() { // when "button_id" is clicked
+	document.getElementById('gesture-output').innerHTML = "Mouse Up";
+});
+$("#test-area").onMouseMove(function() { // when "button_id" is clicked
+	document.getElementById('gesture-output').innerHTML = "";
 });
