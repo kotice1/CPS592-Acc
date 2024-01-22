@@ -60,3 +60,7 @@ function addContact() {
     document.getElementById('number').value = "";
 }
 
+// Gesture Area Testing
+$("#test-area").mousedown(function() { // when "button_id" is clicked
+	document.getElementById('test-area').innerHTML = "Mouse Down";
+});
