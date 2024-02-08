@@ -10,11 +10,11 @@
 }
 
 /* Caption css */
-#caption {
+.caption {
     font-size: 15px;
 }
 
-#paragraph {
+.paragraph {
     font-size: 18px;
 }
 
