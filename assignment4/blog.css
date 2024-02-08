@@ -7,11 +7,11 @@
 
 /* Caption css */
 .caption {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .paragraph {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /* Add a black background color to the top navigation */
@@ -38,6 +38,6 @@ color: black;
 
 /* Add a color to the active/current link */
 .topnav a.active {
-background-color: #04AA6D;
+background-color: orange;
 color: white;
 }
