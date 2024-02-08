@@ -8,11 +8,6 @@ $("#fontUp").click(function() {
     cSize = parseInt($('.caption').css('font-size'));
     cSize = cSize + 6;
     $('.caption').css('font-size', cSize);
-
-    img = parseInt($('img').css('width'));
-    img += 100;
-    $('img').css('width', img);
-
 });
 
 $("#fontDown").click(function() {
@@ -23,6 +18,19 @@ $("#fontDown").click(function() {
     cSize = cSize - 6;
     $('.caption').css('font-size', cSize);
 });
+
+$("#imageUp").click(function() {
+    img = parseInt($('img').css('width'));
+    img += 10;
+    $('img').css('width', img);
+});
+
+$("#imageDown").click(function() {
+    img = parseInt($('img').css('width'));
+    img -= 10;
+    $('img').css('width', img);
+});
+
 
 function fontUp(){
     document.getElementById("paragraph").style.fontSize += 10;
