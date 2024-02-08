@@ -8,7 +8,7 @@ $("#fontUp").click(function() {
 	// $('.paragraph').css('font-size', 36);
     // $('.caption').css('font-size', 30);
     pSize = parseInt($('.paragraph').css('font-size'));
-    pSize = newSize + 6;
+    pSize = pSize + 6;
 	$('.paragraph').css('font-size', pSize);
     cSize = parseInt($('.caption').css('font-size'));
     cSize = cSize + 6;
@@ -34,7 +34,7 @@ $("#fontDown").click(function() {
     // cSize++;
     // pSize++;
     pSize = parseInt($('.paragraph').css('font-size'));
-    pSize = newSize - 6;
+    pSize = pSize - 6;
 	$('.paragraph').css('font-size', pSize);
     cSize = parseInt($('.caption').css('font-size'));
     cSize = cSize - 6;
