@@ -8,6 +8,11 @@ $("#fontUp").click(function() {
     cSize = parseInt($('.caption').css('font-size'));
     cSize = cSize + 6;
     $('.caption').css('font-size', cSize);
+
+    img = parseInt($('img').css('width'));
+    img += 100;
+    $('img').css('width', img);
+
 });
 
 $("#fontDown").click(function() {
