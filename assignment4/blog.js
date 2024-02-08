@@ -2,11 +2,17 @@
 
 // Accessibility Buttons
 $("#fontUp").click(function() {
-    document.getElementById("paragraph").style.fontSize += 10;
+    // document.getElementById("paragraph").style.fontSize += 10;
     // content.fontSize = content.fontSize + 10;
     // console.log(document.getElementById("paragraph").style.fontSize);
 	// $('.paragraph').css('font-size', 36);
     // $('.caption').css('font-size', 30);
+    pSize = parseInt($('.paragraph').css('font-size'));
+    pSize = newSize + 6;
+	$('.paragraph').css('font-size', pSize);
+    cSize = parseInt($('.caption').css('font-size'));
+    cSize = cSize + 6;
+    $('.caption').css('font-size', cSize);
 });
 
 $("#fontDown").click(function() {
@@ -27,10 +33,12 @@ $("#fontDown").click(function() {
     // }
     // cSize++;
     // pSize++;
-    newSize = parseInt($('.paragraph').css('font-size'));
-    newSize = newSize + 10;
-	$('.paragraph').css('font-size', newSize);
-    $('.caption').css('font-size', newSize);
+    pSize = parseInt($('.paragraph').css('font-size'));
+    pSize = newSize - 6;
+	$('.paragraph').css('font-size', pSize);
+    cSize = parseInt($('.caption').css('font-size'));
+    cSize = cSize - 6;
+    $('.caption').css('font-size', cSize);
 });
 
 function fontUp(){
