@@ -13,8 +13,23 @@ $("#fontDown").click(function() {
     // document.getElementById("paragraph").style.fontSize += 10;
     // console.log(document.getElementById("paragraph").style.fontSize);
     // content.fontSize = content.fontSize++;
-	$('#paragraph').css('font-size', 12);
-    $('#caption').css('font-size', 8);
+    let pClass = document.getElementsByClassName('paragraph');
+    let cClass = document.getElementsByClassName('caption');
+    pSize = 18;
+    for (var e in pClass){
+        if (e == fontSize){
+            pSize = e;
+        }
+    }
+    for (var e in cClass){
+        if (e == fontSize){
+            cSize = e;
+        }
+    }
+    cSize++;
+    pSize++;
+	$('.paragraph').css('font-size', pSize);
+    $('.caption').css('font-size', cSize);
 });
 
 function fontUp(){
