@@ -1,17 +1,21 @@
 /* blog.css */
 /* Add Gray Background for blog post content */
 .content {
-    background-color: gray;
+    background-color: lightgrey;
     overflow-wrap: normal;
+}
+
+.accessibility {
+    background-color: lightsalmon;
 }
 
 /* Caption css */
 .caption {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .paragraph {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 /* Add a black background color to the top navigation */
