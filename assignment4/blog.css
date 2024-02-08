@@ -5,6 +5,15 @@
     overflow-wrap: normal;
 }
 
+/* Caption css */
+.caption {
+    font-size: 9px;
+}
+
+.paragraph {
+    font-size: 12px;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
