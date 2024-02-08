@@ -2,7 +2,7 @@
 /* Add Gray Background for blog post content */
 .content {
     background-color: gray;
-    overflow-wrap: True;
+    overflow-wrap: normal;
 }
 
 /* Add a black background color to the top navigation */
