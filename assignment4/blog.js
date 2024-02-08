@@ -27,7 +27,7 @@ $("#fontDown").click(function() {
     // }
     // cSize++;
     // pSize++;
-    size += 10
+    size += 10;
 	$('.paragraph').css('font-size', size);
     $('.caption').css('font-size', size);
 });
