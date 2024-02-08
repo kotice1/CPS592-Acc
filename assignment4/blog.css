@@ -1,4 +1,10 @@
 /* blog.css */
+/* Add Gray Background for blog post content */
+.content {
+    background-color: gray;
+    overflow-wrap: True;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
