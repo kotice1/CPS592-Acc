@@ -2,8 +2,10 @@
 
 // Accessibility Buttons
 $("#fontUp").click(function() {
-    let content = document.getElementById("content").style;
-    content.fontSize = content.fontSize++;
+    // let content = document.getElementById("content").style;
+    // content.fontSize = content.fontSize++;
+	$('.paragraph').css('font-size', 36);
+    $('.caption').css('font-size', 30);
 });
 
 $("#fontDown").click(function() {
