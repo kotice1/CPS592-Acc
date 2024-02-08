@@ -2,7 +2,7 @@
 
 // Accessibility Buttons
 $("#fontUp").click(function() {
-    document.getElementById("paragraph").style.fontSize += '10';
+    document.getElementById("paragraph").style.fontSize += 10;
     // content.fontSize = content.fontSize + 10;
     // console.log(document.getElementById("paragraph").style.fontSize);
 	// $('.paragraph').css('font-size', 36);
@@ -27,9 +27,9 @@ $("#fontDown").click(function() {
     // }
     // cSize++;
     // pSize++;
-    size += 10;
-	$('.paragraph').css('font-size', size);
-    $('.caption').css('font-size', size);
+    newSize = parseInt(size) + 10;
+	$('.paragraph').css('font-size', newSize);
+    $('.caption').css('font-size', newSize);
 });
 
 function fontUp(){
