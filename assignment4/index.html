@@ -5,74 +5,18 @@
 		<title>Blog Application</title>
 	</head>
 	<body>
+        <h1 align:center>My Blog Site</h1>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
           </div>
-        <h1 align:center>My Blog Site</h1>
-        <div id="tab_bar" style="width: 800px; margin: 0 auto;">
-            <button class="tab-btn" id="tb1">Dialer</button>
-            <button class="tab-btn" id="tb2">Contacts</button>
-            <button class="tab-btn" id="tb3">Add Contact</button>
-            <button class="tab-btn" id="tb4">Gestures</button>
-        </div>
         <br>
         <br>
         
         <div id="content">
-            <!-- Tab1: dialer UI with numbers and text field and clear button -->
-            <div id="dialer">
-                <input type="text" id="dialerText" value="">
-                <br>
-                <table>
-                    <tr>
-                        <button class="dial-btn" onclick="dialInput('1')">1</button>
-                        <button class="dial-btn" onclick="dialInput('2')">2</button>
-                        <button class="dial-btn" onclick="dialInput('3')">3</button>
-                    </tr>
-                    <br>
-                    <tr>
-                        <button class="dial-btn" onclick="dialInput('4')">4</button>
-                        <button class="dial-btn" onclick="dialInput('5')">5</button>
-                        <button class="dial-btn" onclick="dialInput('6')">6</button>
-                    </tr>
-                    <br>
-                    <tr>
-                        <button class="dial-btn" onclick="dialInput('7')">7</button>
-                        <button class="dial-btn" onclick="dialInput('8')">8</button>
-                        <button class="dial-btn" onclick="dialInput('9')">9</button>
-                    </tr>
-                    <br>
-                    <tr>
-                        <button class="dial-btn" onclick="dialInput('*')">*</button>
-                        <button class="dial-btn" onclick="dialInput('0')">0</button>
-                        <button class="dial-btn" onclick="dialInput('#')">#</button>
-                    </tr>
-                    <br>
-                    <tr>
-                        <button class="dial-and-clear" onclick="dialInput('clear')">Clear</button>
-                        <button class="dial-and-clear" onclick="dialInput('dial')">Dial</button>
-                    </tr>
-                </table>
-            </div>
-        
-            <!-- List of Contacts -->
-            <div id="contact_list">
-                <h3>Contact List</h3><br>
-            </div>
 
-            <!-- Form for adding contacts -->
-            <div id="newContact">
-                <form class="pure-form pure-form-stacked">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Jane Smith">
-                    <label for="number">Number</label>
-                    <input type="text" id="number" placeholder="123-456-7890">
-                </form>
-                <button class="submit-btn" onclick="addContact()">Add</button>
-            </div>
         </div>
 
         <!-- Gesture Tab -->
