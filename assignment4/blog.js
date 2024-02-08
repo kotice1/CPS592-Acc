@@ -10,11 +10,11 @@ $("#fontUp").click(function() {
 });
 
 $("#fontDown").click(function() {
-    // document.getElementById("paragraph").style.fontSize += 10;
+    let size = document.getElementById("paragraph").style.fontSize;
     // console.log(document.getElementById("paragraph").style.fontSize);
     // content.fontSize = content.fontSize++;
-    let pClass = document.getElementsByClassName('paragraph').style.fontSize + 10;
-    let cClass = document.getElementsByClassName('caption').style.fontSize - 10;
+    // let pClass = document.getElementsByClassName('paragraph').style.fontSize + 10;
+    // let cClass = document.getElementsByClassName('caption').style.fontSize - 10;
     // pSize = 18;
     // cSize = 15;
     // for (var e in pClass){
@@ -27,8 +27,9 @@ $("#fontDown").click(function() {
     // }
     // cSize++;
     // pSize++;
-	$('.paragraph').css('font-size', pClass);
-    $('.caption').css('font-size', cClass);
+    size += 10
+	$('.paragraph').css('font-size', size);
+    $('.caption').css('font-size', size);
 });
 
 function fontUp(){
