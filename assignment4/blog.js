@@ -16,3 +16,10 @@ $("#fontDown").click(function() {
 	// $('#paragraph').css('font-size', '12');
     // $('#caption').css('font-size', '8');
 });
+
+function fontUp(){
+    document.getElementById("paragraph").style.fontSize += 10;
+}
+function fontDown(){
+    document.getElementById("paragraph").style.fontSize -= 10;
+}
