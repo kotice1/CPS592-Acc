@@ -31,10 +31,7 @@ $("#imageDown").click(function() {
     $('img').css('width', img);
 });
 
-
-function fontUp(){
-    document.getElementById("paragraph").style.fontSize += 10;
-}
-function fontDown(){
-    document.getElementById("paragraph").style.fontSize -= 10;
-}
+$("#comment-submit").click(function() {
+    let msg = document.getElementById("comment-form").value;
+    document.getElementById("comment-display").innerHTML += msg;
+});
