@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
 		<title>Blog Application</title>
 	</head>
-	<body>
+	<body id="body">
         <h1>My Blog Site</h1>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
@@ -46,6 +46,9 @@
             <input type="text" id="comment-email" placeholder="Email" value=""><br>
             <input type="text" id="comment-form" value="" placeholder="Write Comment Here"><br>
             <button id="comment-submit">Submit</button>
+            <div id="comment-alert" role="alert" hidden>
+                Alert: Comment has been posted!
+            </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

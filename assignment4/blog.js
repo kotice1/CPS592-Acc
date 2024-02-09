@@ -43,4 +43,9 @@ $("#comment-submit").click(function() {
     document.getElementById("comment-name").value = "";
     document.getElementById("comment-email").value = "";
     document.getElementById("comment-form").value = "";
+    $("#comment-alert").show();
+});
+
+$("#body").mousedown(function(event) {
+	$("#comment-alert").hide();
 });
