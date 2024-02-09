@@ -33,5 +33,5 @@ $("#imageDown").click(function() {
 
 $("#comment-submit").click(function() {
     let msg = document.getElementById("comment-form").value;
-    document.getElementById("comment-display").innerHTML += msg;
+    document.getElementById("comment-display").value += msg;
 });
