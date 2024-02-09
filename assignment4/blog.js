@@ -40,6 +40,7 @@ $("#comment-submit").click(function() {
         "<h5>" + email + "<h5> <br>" +
         msg + "<br><br>";
 
-
-    document.getElementById("comment-display").value += msg;
+    document.getElementById("comment-name").value = "";
+    document.getElementById("comment-email").value = "";
+    document.getElementById("comment-form").value = "";
 });
