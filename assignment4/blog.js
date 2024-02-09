@@ -36,8 +36,8 @@ $("#comment-submit").click(function() {
     let email = document.getElementById("comment-email").value;
     let msg = document.getElementById("comment-form").value;
     document.getElementById("comment-display").innerHTML += 
-        "<h3>" + name + "<h3> <br>" +
-        "<h5>" + email + "<h5> <br>" +
+        "<h3>" + name + "<h3>" +
+        "<h5>" + email + "<h5>" +
         msg + "<br><br>";
 
     document.getElementById("comment-name").value = "";
