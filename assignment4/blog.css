@@ -50,5 +50,5 @@ img {
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: orange;
-    color: white;
+    color: black;
 }
