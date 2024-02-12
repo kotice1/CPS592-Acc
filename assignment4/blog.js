@@ -45,7 +45,7 @@ $("#comment-submit").click(function() {
     document.getElementById("comment-form").value = "";
     // $("#comment-alert").show();
     let message = document.getElementById("#comment-alert");
-    alert(message);
+    alert(message.innerHTML);
 });
 
 $("#body").mousedown(function(event) {
