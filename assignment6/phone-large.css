@@ -1,4 +1,4 @@
-/* phone.css */
+/* phone-large.css */
 
 .tab-btn {
     background-color: blue;
@@ -11,6 +11,7 @@
 }
 
 .dial-btn {
+    margin: 10px;
     width: 60px;
     height: 60px;
     background-color: red;
@@ -18,6 +19,7 @@
 }
 
 .dial-and-clear {
+    margin: 20px;
     width: 90px;
     height: 60px;
     background-color: rgb(255, 0, 238);
