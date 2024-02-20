@@ -5,6 +5,13 @@
     color:#fff;
 }
 
+#dialerText {
+    margin: 20px;
+    width: 580px;
+    height: 40px;
+    color: black;
+}
+
 .submit-btn {
     background-color: rgb(57, 202, 57);
     color: #fff;
