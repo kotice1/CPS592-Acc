@@ -11,8 +11,8 @@
 }
 
 .dial-btn {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: red;
     color: #fff;
 }
@@ -20,7 +20,7 @@
 .dial-and-clear {
     width: 90px;
     height: 60px;
-    background-color: rgb(255, 0, 238);
+    background-color: greenyellow;
     color: #fff;
 }
 
