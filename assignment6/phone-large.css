@@ -12,17 +12,17 @@
 
 .dial-btn {
     margin: 10px;
-    width: 60px;
-    height: 60px;
-    background-color: red;
+    width: 180px;
+    height: 180px;
+    background-color: black;
     color: #fff;
 }
 
 .dial-and-clear {
     margin: 20px;
-    width: 90px;
-    height: 60px;
-    background-color: rgb(255, 0, 238);
+    width: 270px;
+    height: 180px;
+    background-color: rgba(0, 128, 2, 0.863);
     color: #fff;
 }
 
