@@ -4,9 +4,18 @@ $(document).ready(function() { // do this when the document is loaded
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
     $("#newContact").hide(); // hide the element with ID "otherElement"
     $("#test-gestures").hide();
+    $("#about").hide();
 });
 
 // Tab Buttons
+$("#tb0").click(function() { // when "button_id" is clicked
+    $("#about").show();
+	$("#dialer").hide(); // show the element with ID "element"
+	$("#contact_list").hide(); // hide the element with ID "otherElement"
+    $("#newContact").hide(); // hide the element with ID "otherElement"
+    $("#test-gestures").hide();
+});
+
 $("#tb1").click(function() { // when "button_id" is clicked
 	$("#dialer").show(); // show the element with ID "element"
 	$("#contact_list").hide(); // hide the element with ID "otherElement"
