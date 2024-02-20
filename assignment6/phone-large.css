@@ -6,6 +6,7 @@
 }
 
 #dialerText {
+    margin: 20px;
     width: 620px;
     height: 80px;
     color: black;
@@ -23,6 +24,7 @@
     height: 180px;
     background-color: black;
     color: #fff;
+    font-size: 70px;
 }
 
 .dial-and-clear {
@@ -31,6 +33,7 @@
     height: 180px;
     background-color: rgba(0, 128, 2, 0.863);
     color: #fff;
+    font-size: 70px;
 }
 
 .gesture-area {
