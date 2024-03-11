@@ -14,6 +14,32 @@
             <!-- <iframe height="430" width="350" src="https://bot.dialogflow.com/ff1ac338-1cf4-42fe-895a-2e4208f118be"></iframe> -->
             <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/ff1ac338-1cf4-42fe-895a-2e4208f118be"></iframe>
         </div>
-            
+
+        <p>
+            First, I created the basic elements of an ordinary Oven. I created functionality to set a timer, to preheat the oven, 
+            to set the clock time, and turn off the oven. I then allowed the first test user to use it.
+        </p>
+        <p>
+            I immediately noticed that when the user did not specify a temperature unit, the response would show “[empty response]”. 
+            For example, the user would type, “Preheat the oven to 425”. The response would be “[empty response]”. 
+            To fix this I can set the parameter to be required and for the system to ask the user for the temperature including units. 
+            Everything else seemed to function properly for the other use cases.
+        </p>
+        <p>
+            During the second test users actions, I noticed the same issue with the units for setting a timer. 
+            I fixed this using the same method as before and requiring the parameter and defining a prompt for the missing parameter.
+        </p>
+        <p>
+            After this test I decided to test out using follow-up intents with the functionality to set the clock. 
+            So, instead of asking for a required parameter, it says what time it thinks you are trying to set the clock to, 
+            then asks if it is correct. If it is, it stops asking questions. If it is not, it recommends the user to try again
+             and reminds the user to use am or pm to specify. This was just a different way to go about the same problem using
+              a different technique.
+        </p>
+        <p>
+            I also changed the welcome default to notify the user that they can type help for a list of possible commands. 
+            All further tests resulted in no issues going forward.
+        </p>
+        
 	</body>
 </html>
