@@ -100,7 +100,7 @@ $(document).keypress(function(event) {
 		selectPrevious();
 	} else if (event.key == "d") { //select right
 		selectNext();
-	} else if (event.key == " ") {
+	} else if (event.key == "f") { //click selected item
 		clickSelectedItem();
 	}
 })
